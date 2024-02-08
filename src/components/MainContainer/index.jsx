@@ -1,20 +1,24 @@
-import React, { Component, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Container, Row } from 'react-bootstrap';
 
-import Game from '../Game';
 import LoginSignup from '../../pages/loginSignup';
 
 class MainContainer extends Component {
     constructor(props){
         super(props);
+
+        this.state = {
+            logged: false
+        }
     }
 
     render(){
         return(
             <Container fluid>
                 <Row>
+                    {!this.state.logged && (
                     <LoginSignup />
-                    {/* <Game player={this.props.player} updateInaccuracyDistance={this.props.updateInaccuracyDistance} updateInaccuracySpeed={this.props.updateInaccuracySpeed} updateEngine={this.props.updateEngine} /> */}
+                    )}
                 </Row>
             </Container>
         );

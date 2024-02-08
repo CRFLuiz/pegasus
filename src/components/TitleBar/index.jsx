@@ -1,33 +1,17 @@
 import React, { Component } from 'react';
-import { Form, NavDropdown, Nav } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
 class TextLinkExample extends Component {
     constructor(props){
         super(props);
-
-        this.updateInaccuracyDistance = this.updateInaccuracyDistance.bind(this)
-        this.updateInaccuracySpeed = this.updateInaccuracySpeed.bind(this)
-        this.updateEngine = this.updateEngine.bind(this)
-    }
-
-    updateInaccuracyDistance(ev){
-        this.props.updateInaccuracyDistance(ev.target.value)
-    }
-
-    updateInaccuracySpeed(ev){
-        this.props.updateInaccuracySpeed(ev.target.value)
-    }
-
-    updateEngine(ev){
-        this.props.updateEngine(ev.target.value)
     }
 
     render(){
         return (
             <Navbar bg="primary" data-bs-theme={this.props.data_bs_theme || 'dark'} expand='lg'>
                 <Container fluid>
+                    {/*
                     <Navbar.Brand href="#home">Settings</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
@@ -82,6 +66,7 @@ class TextLinkExample extends Component {
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
+                    */}
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
                             Signed in as: <a href="#login">Mark Otto</a>
