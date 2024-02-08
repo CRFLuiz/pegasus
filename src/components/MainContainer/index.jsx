@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 import Game from '../Game';
+import LoginSignup from '../../pages/loginSignup';
 
 class MainContainer extends Component {
     constructor(props){
@@ -12,7 +13,8 @@ class MainContainer extends Component {
         return(
             <Container fluid>
                 <Row>
-                    <Game player={this.props.player} updateInaccuracyDistance={this.props.updateInaccuracyDistance} updateInaccuracySpeed={this.props.updateInaccuracySpeed} updateEngine={this.props.updateEngine} />
+                    <LoginSignup />
+                    {/* <Game player={this.props.player} updateInaccuracyDistance={this.props.updateInaccuracyDistance} updateInaccuracySpeed={this.props.updateInaccuracySpeed} updateEngine={this.props.updateEngine} /> */}
                 </Row>
             </Container>
         );

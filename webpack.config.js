@@ -33,7 +33,7 @@ module.exports = {
                 use: [
                     MiniCSSExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
                 ],
                 include: path.resolve(__dirname, 'src', 'design'),
             }

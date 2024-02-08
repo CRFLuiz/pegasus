@@ -1,12 +1,3 @@
-$primary: #690202;  // 822626
-$secondary: #525252;
-$light: #E6DDBC;
-$dark: #262525;
-
-$success: #268240;
-$info: #262E82;
-
-$danger: #D78686;
-$warning: #826E26;
-
+@import 'vars.scss';
 @import '~bootstrap/scss/bootstrap.scss';
+@import 'loginSignup.scss';
